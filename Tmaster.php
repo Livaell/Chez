@@ -1,9 +1,10 @@
 ﻿<?php
-	header("Content-Type: text/html;charset=utf-8");
+header("Content-Type: text/html;charset=utf-8");
+
 if (!empty($_GET["r"])) { 
 	
 	//Предварительная обработка входящей переменной
-	$r = split('[`]', $_GET["r"]); $m[0] = $r[0]."$".$r[1]."$".$r[2]; $m[1] = $r[0]."$".$r[1]."$%"; $m[2] = $r[0]."$%$%"; 
+	$r = explode('`', $_GET["r"]); $m[0] = $r[0]."$".$r[1]."$".$r[2]; $m[1] = $r[0]."$".$r[1]."$%"; $m[2] = $r[0]."$%$%"; 
 	
 	//Подключение к базе
 	$dbcnx = @mysql_connect("localhost", "chez", "chez"); mysql_set_charset("utf8"); mysql_select_db("chez");

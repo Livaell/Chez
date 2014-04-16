@@ -1,9 +1,10 @@
 <?php 
 header("Content-Type: text/html;charset=utf-8");
+
 if (!empty($_GET["s"])) { 
 
 	//Предварительная обработка переменных
-	$r = split('[|]', $_GET["s"]); $a = split('[\]', $r[0]);
+	$r = explode('|', $_GET["s"]); $a = explode('\\', $r[0]);
 	
 	//Подключение к базе данных
 	$dbcnx = @mysql_connect("localhost", "chez", "chez"); mysql_set_charset("utf8"); mysql_select_db("chez");

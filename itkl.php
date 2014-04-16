@@ -4,7 +4,7 @@ header("Content-Type: text/html;charset=utf-8");
 if (!empty($_GET["s"])) { 
 
 	//Предварительная обработка переменных
-	$s = split('[`]', $_GET["s"]); 
+	$s = explode('`', $_GET["s"]); 
 	
 	//Подключение к базе данных
 	$dbcnx = @mysql_connect("localhost", "chez", "chez"); mysql_set_charset("utf8"); mysql_select_db("chez");

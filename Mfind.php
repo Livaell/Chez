@@ -1,9 +1,10 @@
 <?php 
 header("Content-Type: text/html;charset=utf-8");
+
 if (!empty($_GET["j"])) { 
 
 //Предварительная обработка переменных
-$m = split('[|]',$_GET["j"]);
+$m = explode('|',$_GET["j"]);
 
 //Подключение к базе и формирование массива
 $dbcnx = @mysql_connect("localhost", "chez", "chez");
@@ -20,13 +21,13 @@ $qry = "SELECT * FROM `umt` WHERE `umt`.`u` = '".mysql_real_escape_string($m[2])
 $result2 = mysql_query($qry); $f2 = mysql_fetch_array($result2);
 
 //Условие выбора базы данных между центральной или пользовательской
-if(mysql_num_rows($result2) > 0){$a = split('[|]', $f2[2]);$c = split('[\\]', $f2[1]);}
-else{$a = split('[|]', $f[2]);$c = split('[\\]', $f[1]);}
+if(mysql_num_rows($result2) > 0){$a = explode('|', $f2[2]);$c = explode('\\', $f2[1]);}
+else{$a = explode('|', $f[2]);$c = explode('\\', $f[1]);}
 
 //Поиск в поле цен даты и соответствующе цены
-$s = split('[\\]', $a[0]); $d = strtotime($s[0]) - strtotime($m[0]);
+$s = explode('\\', $a[0]); $d = strtotime($s[0]) - strtotime($m[0]);
 //Цикл поиска даты и цены
-for($i = 0; $i < count($a); $i++){$s = split('[\\]', $a[$i]);
+for($i = 0; $i < count($a); $i++){$s = explode('\\', $a[$i]);
 	if(abs(strtotime($s[0]) - strtotime($m[1])) < $d){
 		$d = abs(strtotime($s[0]) - strtotime($m[1]));$y = $s[0];$u = $s[1];
 	}

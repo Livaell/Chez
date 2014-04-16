@@ -1,5 +1,6 @@
 <?php
 header("Content-Type: text/html;charset=utf-8");
+
 if (!empty($_GET["ge"])) { 
 
 //Подключение к базе и формирование массива

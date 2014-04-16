@@ -1,4 +1,5 @@
 ﻿<?php
+//header("Content-Type: text/html;charset=utf-8");
 
 //Подключение к базе и формирование массива
 $dbcnx = mysql_connect("localhost", "chez", "chez");

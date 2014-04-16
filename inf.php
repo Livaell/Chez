@@ -22,8 +22,8 @@ $f = mysql_fetch_array($result);
 
 //echo $f[3];
 
-$a = split('[|]',$f[3]);
-$s = split('[!]',$a[4]);
+$a = explode('|',$f[3]);
+$s = explode('!',$a[4]);
 //echo $a[0];
 ?>
 
@@ -120,59 +120,59 @@ document.getElementById('tr').innerHTML = ai(m); //Пересчет чэз пр�
             </tr>
             <tr>
                 <td width="40" align="center">1.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[0]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[0]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[0]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[0]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">2.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[1]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[1]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[1]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[1]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">3.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[2]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[2]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[2]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[2]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">4.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[3]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[3]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[3]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[3]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">5.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[4]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[4]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[4]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[4]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">6.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[5]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[5]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[5]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[5]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">7.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[6]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[6]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[6]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[6]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">8.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[7]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[7]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[7]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[7]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">9.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[8]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[8]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[8]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[8]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">10.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[9]); echo $m[0]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[9]); echo $m[0]; ?></td>
                 <td width="149" align="center" style="background-color: rgb(220,194,116)">
                 
-                <input style="background-color: rgb(220,194,116); border-width:0px " id="Qt" align="middle" onkeypress="Ct(event)" value="<?php $m = split('[`]',$s[9]); echo $m[1]; ?>" />
+                <input style="background-color: rgb(220,194,116); border-width:0px " id="Qt" align="middle" onkeypress="Ct(event)" value="<?php $m = explode('`',$s[9]); echo $m[1]; ?>" />
                 
 <script type="text/javascript">
 function Ct(e){if (e.keyCode == 13) {var a = '<?php echo mysql_real_escape_string($f[1]); ?>';document.getElementById('tr').innerHTML = '<font color="#CC0000">' + ai(a) + '</font>';}} // Расчет чэз
-function ai(s){a = s.split('\\'); a[5] = document.getElementById('Qt').value;
+function ai(s){a = s.join('\\'); a[5] = document.getElementById('Qt').value;
 	
 	var Mp = a[21];var k2 = a[7] / 100;
 	var I = a[17] / 100;var N = parseInt(a[18]) + 1;
@@ -187,138 +187,138 @@ function ai(s){a = s.split('\\'); a[5] = document.getElementById('Qt').value;
             </tr>
             <tr>
                 <td width="40" align="center">11.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[10]); echo $m[0]; ?></td>
-                <td width="149" align="center" id="tr"><?php $m = split('[`]',$s[10]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[10]); echo $m[0]; ?></td>
+                <td width="149" align="center" id="tr"><?php $m = explode('`',$s[10]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">12.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[11]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[11]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[11]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[11]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">13.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[12]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[12]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[12]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[12]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">14.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[13]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[13]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[13]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[13]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">15.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[14]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[14]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[14]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[14]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" height="25" align="center">16.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[15]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[15]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[15]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[15]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">17.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[16]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[16]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[16]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[16]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">18.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[17]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[17]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[17]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[17]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">19.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[18]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[18]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[18]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[18]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">20.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[19]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[19]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[19]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[19]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">21.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[20]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[20]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[20]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[20]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">22.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[21]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[21]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[21]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[21]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">23.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[22]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[22]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[22]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[22]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">24.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[23]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[23]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[23]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[23]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">25.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[24]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[24]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[24]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[24]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">26.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[25]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[25]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[25]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[25]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">27.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[26]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[26]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[26]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[26]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">28.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[27]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[27]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[27]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[27]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">29.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[28]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[28]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[28]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[28]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">30.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[29]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[29]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[29]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[29]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">31.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[30]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[30]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[30]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[30]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">32.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[31]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[31]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[31]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[31]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">33.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[32]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[32]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[32]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[32]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">34.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[33]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[33]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[33]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[33]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">35.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[34]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[34]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[34]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[34]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">36.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[35]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[35]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[35]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[35]); echo $m[1]; ?></td>
             </tr>
             <tr>
                 <td width="40" align="center">37.</td>
-                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = split('[`]',$s[36]); echo $m[0]; ?></td>
-                <td width="149" align="center"><?php $m = split('[`]',$s[36]); echo $m[1]; ?></td>
+                <td style="padding: 0pt 5.4pt 0pt 5.4pt;" width="511"><?php $m = explode('`',$s[36]); echo $m[0]; ?></td>
+                <td width="149" align="center"><?php $m = explode('`',$s[36]); echo $m[1]; ?></td>
             </tr>
         </tbody>
     </table>
