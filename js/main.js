@@ -3292,7 +3292,7 @@ function addrow(){
 	if(m[0] == '' && m[1] == '' && m[2] == ''){return};if(m[1] == undefined){m[1] = ''};
 	var url = 'ajax.php?ge='+encodeURIComponent(m[0] + '|' + m[1] + '|' + m[2] + '|' + uin);
 	getAjax(url,showResult);
-}  function showResult(d){alert(d);
+}  function showResult(d){
 	var a = d.split('|'); var u = document.getElementById('Q');
 	if (v.length != 0){var s = a[a.length - 1].split('\\'); s = s[0].split('.');
 	var m = v[v.length - 1].split('\\'); m = m[0].split('.');
