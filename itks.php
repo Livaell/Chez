@@ -1,5 +1,5 @@
 ﻿<?php 
-header("Content-Type: text/html;charset=utf-8");
+//header("Content-Type: text/html;charset=utf-8");
 
 if (!empty($_GET["s"])) { 
 
@@ -7,7 +7,7 @@ if (!empty($_GET["s"])) {
 	$s = explode('`', $_GET["s"]); 
 	
 	//Подключение к базе данных
-	$dbcnx = @mysql_connect("localhost", "chez", "chez"); mysql_set_charset("utf8"); mysql_select_db("chez");
+	$dbcnx = mysql_connect("localhost", "chez", "chez"); mysql_set_charset("utf8"); mysql_select_db("chez");
 	
 	//1. Проверка на существование технологии во временной базе данных
 	$q1 = "SELECT * FROM `uzl` WHERE `uzl`.`u` = '".mysql_real_escape_string($s[1])."' AND `uzl`.`s` LIKE '".mysql_real_escape_string($s[2]."%")."'"; 
