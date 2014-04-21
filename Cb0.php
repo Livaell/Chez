@@ -2,7 +2,7 @@
 header("Content-Type: text/html;charset=utf-8");
 
 //Подключение к базе и формирование массива
-//$dbcnx = @mysql_connect("localhost", "cez", "Ntcn1"); mysql_set_charset("utf8");mysql_select_db("cez");
+
 $db = mysql_connect("localhost", "chez", "chez");
 mysql_set_charset("utf8");
 mysql_select_db("chez", $db);
