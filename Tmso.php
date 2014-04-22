@@ -7,7 +7,7 @@ if (!empty($_GET["r"])) {
 	$r = explode('`', $_GET["r"]); 
 	
 	//Подключение к базе
-	$dbcnx = @mysql_connect("localhost", "chez", "chez"); mysql_set_charset("utf8"); mysql_select_db("chez");
+	$db = mysql_connect("localhost", "chez", "chez"); mysql_set_charset("utf8"); mysql_select_db("chez");
 	
 		
 	//1. SQL запрос с соответствующей переменной из центральной базы данных
@@ -20,6 +20,6 @@ if (!empty($_GET["r"])) {
 	};
 	
 	//Вывод значений функции
-	print $a; 
+	print $a;
 } 
 else {echo 'нет значения';}

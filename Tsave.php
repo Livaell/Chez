@@ -7,7 +7,7 @@ if (!empty($_GET["s"])) {
 	$r = explode('`', $_GET["s"]); 
 	
 	//Подключение к базе данных
-	$dbcnx = @mysql_connect("localhost", "chez", "chez"); mysql_set_charset("utf8"); mysql_select_db("chez");
+	$db = mysql_connect("localhost", "chez", "chez"); mysql_set_charset("utf8"); mysql_select_db("chez");
 	
 	//1. Проверка на существование технологии в центральной базе данных
 	$q5 = "SELECT * FROM `atg` WHERE `atg`.`s` LIKE '".mysql_real_escape_string($r[3]."$%")."'"; $rt = mysql_query($q5);
