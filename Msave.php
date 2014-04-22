@@ -7,7 +7,7 @@ if (!empty($_GET["s"])) {
 	$r = explode('|', $_GET["s"]); $a = explode('\\', $r[0]);
 	
 	//Подключение к базе данных
-	$dbcnx = @mysql_connect("localhost", "chez", "chez"); mysql_set_charset("utf8"); mysql_select_db("chez");
+	$db = mysql_connect("localhost", "chez", "chez"); mysql_set_charset("utf8"); mysql_select_db("chez");
 	
 	//Проверка на существовании машины в базе данных
 	$j = "'".mysql_real_escape_string("%\\\\".$a[1]."\\\\%")."'";
