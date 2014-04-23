@@ -4002,4 +4002,17 @@ function fni(){
 */
 
 //pva();
-function pva(){alert("ПВА тест");}
+
+function pva(){
+	alert("ПВА тест, слияние с главной веткой тест 1");
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
