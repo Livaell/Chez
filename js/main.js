@@ -3717,12 +3717,12 @@ function fp2(e){fp(); e.src='image/H23.png'; delp(); onil(cz[1]);}
 function fp3(e){fp(); e.src='image/H23.png'; delp(); onil(cz[2]);}
 function fp4(e){fp(); e.src='image/H23.png'; delp(); onil(cz[3]);}
 function fp5(e){fp(); e.src='image/H23.png'; delp(); onil(cz[4]);} //Группа функций на клик по вкладкам агрегатов
-function repar(){var s = ReOne()
-	if(document.getElementById('cp1').src == 'image/H13.png'){cz[0] = s}
-	if(document.getElementById('cp2').src == 'image/H23.png'){cz[1] = s}
-	if(document.getElementById('cp3').src == 'image/H23.png'){cz[2] = s}
-	if(document.getElementById('cp4').src == 'image/H23.png'){cz[3] = s}
-	if(document.getElementById('cp5').src == 'image/H23.png'){cz[4] = s};//alert(cz[0]);
+function repar(){var s = ReOne();
+	if(document.getElementById('cp1').src.indexOf("image/H13.png") > -1){cz[0] = s}
+	if(document.getElementById('cp2').src.indexOf("image/H23.png") > -1){cz[1] = s}
+	if(document.getElementById('cp3').src.indexOf("image/H23.png") > -1){cz[2] = s}
+	if(document.getElementById('cp4').src.indexOf("image/H23.png") > -1){cz[3] = s}
+	if(document.getElementById('cp5').src.indexOf("image/H23.png") > -1){cz[4] = s};//alert(cz[0]);
 } //Функция сбора всех параметров в массив cz
 function gm(){
 	var t = new Date(); var dt = ((String(t.getDate()).length == 1) ? "0" + t.getDate() : t.getDate()) + "." + ((parseInt(t.getMonth()) < 9) ? "0" + (parseInt(t.getMonth()) + 1): parseInt(t.getMonth()) + 1) + "." + t.getFullYear();
@@ -3736,7 +3736,6 @@ function nechez(){
 	else{
 		document.getElementById('mychez').innerHTML = '<p style="margin-left:40px; float:left">ЧЭЗ, руб./час</p><b><p id="chez" style="margin-left:15px; float:left">' + a[3] + '</p></b>';
 	}
-
 } //Функция расчета показателя чез в параметрах
 
 //---------------------------------------------------------------------------------------------------------------------------
