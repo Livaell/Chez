@@ -4000,7 +4000,3 @@ function fni(){
 <script type="text/javascript" src="js/Pdf/examples/basic.js"></script>
 -->
 */
-//pva();
-function pva(){
-	alert("проба ПВА");
-	}
