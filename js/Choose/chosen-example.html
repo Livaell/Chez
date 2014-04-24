@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html" charset="utf-8">
+<link rel="stylesheet" href="chosen.css" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="chosen.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  jQuery(".chosen").chosen().change(function(e){
+  
+	console.log(e);
+  
+  });
+
+  jQuery(".chosenexample").chosen().change(function(e){
+  
+	$('.infoch').fadeOut().empty().text($(this).val()).fadeIn();
+  
+  });
+  
+  $('#button').click(function(){
+		$('#append').load('chosen.html',function(){
+
+			jQuery(".chosennew").chosen().change(function(e){
+			
+			console.log($(this).val());
+	  
+			});
+
+		
+		});
+		
+		  
+  });
+  
+  
+});
+</script>
+</head>
+
+<body>
+<!-- single dropdown -->
+<select class="chosen" style="width:200px;">
+  <option>Cent OC</option>
+  <option>Ubuntu</option>
+  <option selected="selected">Fedore core...</option>
+  <option>Free BSD...</option>
+  <option>Debian</option>
+</select>
+<br /><br />
+<!-- multiple dropdown -->
+<select class="chosen" multiple="true" style="width:400px;">
+  <option>Cent OC</option>
+  <option>Ubuntu</option>
+  <option selected="selected">Fedore core...</option>
+  <option>Free BSD...</option>
+  <option>Debian</option>
+</select>
+
+</body>
+</html>
